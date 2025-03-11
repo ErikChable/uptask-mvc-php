@@ -233,7 +233,7 @@
         datos.append('proyectoId', obtenerProyecto()); 
 
         try {
-            const url = `${location.origin}/api/tarea`;
+            const url = '/api/tarea';
             const respuesta = await fetch(url, {
                 method: 'POST',
                 body: datos
@@ -285,7 +285,7 @@
         //     console.log(valor);
         // } // Permite ver los datos del formData
         try {
-            const url = `${location.origin}/api/tarea/actualizar`;
+            const url = '/api/tarea/actualizar';
 
             const respuesta = await fetch(url, {
                 method: 'POST',
@@ -347,7 +347,7 @@
         datos.append('proyectoId', obtenerProyecto());
 
         try {
-            const url = `${location.origin}/api/tarea/eliminar`;
+            const url = '/api/tarea/eliminar';
             const respuesta = await fetch(url, {
                 method: 'POST',
                 body: datos
